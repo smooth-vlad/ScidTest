@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:paddingHorizontal="8dp"
+    android:paddingVertical="4dp">
+
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="24dp"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        android:fontFamily="@font/manrope_semibold"
+        android:maxLines="2"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/trailing_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Название 1" />
+
+    <FrameLayout
+        android:id="@+id/trailing_layout"
+        android:layout_width="112dp"
+        android:layout_height="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/trailing_image_view"
+            android:layout_width="@dimen/default_icon_size"
+            android:layout_height="@dimen/default_icon_size"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginVertical="12dp"
+            android:contentDescription="Right Arrow"
+            android:src="@drawable/arrow_right"
+            app:tint="@color/grey" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
